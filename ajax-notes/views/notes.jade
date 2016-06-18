@@ -1,0 +1,17 @@
+extends layout
+
+block header
+  script(src="javascripts/notes.js")
+
+block content
+  h1 #{username} Account
+  p Welcome #{username}
+  #{google}
+  form(action="/logout", method="post")
+        button(type="submit") Logout
+  
+  div.notesArea
+
+  div.mir
+
+
